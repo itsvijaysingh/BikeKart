@@ -55,6 +55,8 @@ Table of Contents
     --dark-gray-color: #282828;
 }
 
+
+
 body, a{
     margin: 0;
 	padding: 0;
@@ -62,7 +64,7 @@ body, a{
     width: 100%;
     color: var(--white-color);
     font-family: var(--theme-font);
-    box-sizing: border-boxs;
+    box-sizing: border-box;
 }
 
 a{
@@ -270,7 +272,6 @@ button:hover{
     display: block;
     transform-origin: center;
     transform: translate3d(0, 0, 0);
-    transform-origin: center;
     animation: rotateicon 3s linear 0s infinite;
 }
 
