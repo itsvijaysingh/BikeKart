@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--WebPage Title-->
-    <title>Contact Us - BikeKart</title>
+    <title>Book Service - BikeKart</title>
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../assets/css/contact.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/book-service.css" type="text/css" />
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="../assets/fontawesome/css/all.css" type="text/css" />
@@ -110,91 +110,92 @@
         </div>
     </header>
 
+
     <section class="heading-bar">
         <div class="heading">
-            <h1>Contact Us</h1>
+            <h1>Book a Service</h1>
         </div>
         <div class="sub-heading">
             <a href="/index.html">Home</a>
             <a>/</a>
-            <a href="#"><span class="colored-text">Contact Us</span></a>
+            <a href="#"><span class="colored-text">Book Service</span></a>
         </div>
     </section>
 
 
-    <section class="contact-section">
-        <section class="contact-form">
-            <div class="heading">
-                <h3>Get In Touch</h3>
-            </div>
-            <div class="form-container">
-                <form action="./thank-you.html">
-                    <div class="row">
-                        <input type="text" id="name" name="name" placeholder="Full Name">
-                        <input type="email" id="email" name="email" placeholder="Email Address">
-                    </div>
-                    <div>
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
-                    </div>
-                    <div>
-                        <input type="text" id="message" name="subject" placeholder="Message">
-                    </div>
-                    <div>
-                        <input type="submit" id="submit" value="Submit">
+    <section class="book-service">
+        <div class="sub-heading-text">
+            <p>Book a service with ease by filling in the details below. Our team will swiftly respond to your request, ensuring your bike is in top-notch condition. For any queries, proposals, or further assistance, please don't hesitate to reach out to us. We're here to help!</p>
+        </div>
+        <div class="form-section">
+            <form action="./thank-you.html">
+                <div class="row">
+                    <div class="form-group">
+                        <select name="bike-brand" id="bike-brand">
+                            <option selected disabled>- Select Brand -</option>
+                            <option value="kawasaki">Kawasaki</option>
+                            <option value="bmw">BMW</option>
+                            <option value="ktm">KTM</option>
+                            <option value="Yamaha">Yamaha</option>
+                        </select>
                     </div>
 
-                </form>
-            </div>
-        </section>
-        <section class="address-details">
-            <div class="heading">
-                <h3>Information</h3>
-            </div>
-            <div class="office-address">
-                <h5>Office Address</h5>
-                <div class="infobox">
-                    <div class="add-icon">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <div class="form-group">
+                        <select name="bike-model" id="bike-model">
+                            <option selected disabled>- Select Model -</option>
+                            <option value="xt">XT</option>
+                            <option value="x50">X50</option>
+                            <option value="rcs">RCS</option>
+                            <option value="sce">SCE</option>
+                        </select>
                     </div>
-                    <div class="address">
-                        <span>
-                            1234 Blossom Street
-                        </span>
-                        <br>
-                        <span>
-                            Roseville Gardens,
-                        </span>
-                        <br>
-                        <span>
-                            Mumbai 400001,
-                        </span>
-                        <br>
-                        <span>
-                            Maharashtra, India
-                        </span>
+
+                    <div class="form-group">
+                        <select name="bike-engine" id="bike-engine">
+                            <option selected disabled>- Select Engine -</option>
+                            <option value="cylinedr">CYLINEDR</option>
+                            <option value="automatic">AUTOMATIC</option>
+                            <option value="electric">ELECTRIC</option>
+                            <option value="petrol">PETROL</option>
+                        </select>
                     </div>
+
                 </div>
-            </div>
-            <div class="call-information">
-                <h5>Call Information</h5>
-                <div>
-                    <i class="fa-solid fa-mobile"></i><span>Phone: </span><span>+91 98765 43210</span>
+
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
                 </div>
-                <div>
-                    <i class="fa-solid fa-phone-flip"></i><span>Tel: </span><span>+91-541-234-3010</span>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
                 </div>
-                <div>
-                    <i class="fa-solid fa-envelope"></i><span>Email: </span><span><a href="mailto:info@bikekart.com">info@bikekart.com</a></span>
+
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                 </div>
-            </div>
-            <div class="social-icons">
-                <h5><span>/</span> Find On Social <span>/</span> </h5>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </section>
+
+                <div class="form-group">
+                    <input type="text" id="address" name="address" placeholder="Address" required>
+                </div>
+
+                <div class="form-group">
+                    <select id="payment-method" name="payment-method" required>
+                        <option selected disabled>- Choose Payment Method -</option>
+                        <option value="cash">Cash on Delievery</option>
+                        <option value="online">Online Payment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="8" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </form>
+
+
+        </div>
     </section>
 
 
